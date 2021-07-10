@@ -1,7 +1,7 @@
 <!--
  * @Author: 邱狮杰
  * @Date: 2021-07-09 23:57:06
- * @LastEditTime: 2021-07-10 19:56:16
+ * @LastEditTime: 2021-07-10 20:08:01
  * @FilePath: /reactts/README.md
  * @Description: 描述
 -->
@@ -60,3 +60,4 @@ class App extends Component<ownProps, ownState> {
 ```
 
 [Gitee dosc]('https://gitee.com/Jsman/react-decorator/blob/master/docs.md')
+[Github dosc]('https://gitee.com/Jsman/react-decorator/blob/master/docs.md')
