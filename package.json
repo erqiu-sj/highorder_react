@@ -9,7 +9,6 @@
     "autobind-decorator": "^2.4.0",
     "class-validator": "^0.13.1",
     "react": "^17.0.2",
-    "react-decoration": "^2.1.0",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "reflect-metadata": "^0.1.13",
