@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+/*
+ * @Author: 邱狮杰
+ * @Date: 2021-07-09 23:57:06
+ * @LastEditTime: 2021-07-10 19:26:32
+ * @FilePath: /reactts/src/App.tsx
+ * @Description: 描述
+ */
+import { Component } from "react";
+import { componentDidMount, initialState } from "./decorator";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface State {
+  age: number;
 }
-
+interface Props {}
+@componentDidMount<State>(({ age }) => {
+  console.log(age);
+})
+@initialState({
+  age: 1,
+})
+class App extends Component<Props, State> {
+  render() {
+    return <h1>1</h1>;
+  }
+}
 export default App;
