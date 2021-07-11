@@ -1,10 +1,11 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2021-07-10 12:11:56
- * @LastEditTime: 2021-07-10 21:34:27
+ * @LastEditTime: 2021-07-11 16:35:58
  * @FilePath: /reactts/src/decorator/class/mergeProps.tsx
  * @Description: mergeProps
  */
+import React from "react";
 import { validatorsClass } from "../../utils/index";
 
 /**

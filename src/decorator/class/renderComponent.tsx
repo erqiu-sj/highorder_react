@@ -5,6 +5,7 @@
  * @FilePath: /reactts/src/decorator/class/renderComponent.tsx
  * @Description: renderComponent
  */
+import React from "react";
 import { validatorsClass } from "../../utils/index";
 /**
  * @description renderComponent

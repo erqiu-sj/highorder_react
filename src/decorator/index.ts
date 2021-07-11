@@ -1,7 +1,7 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2021-07-10 12:51:56
- * @LastEditTime: 2021-07-10 19:17:24
+ * @LastEditTime: 2021-07-11 16:52:20
  * @FilePath: /reactts/src/decorator/index.ts
  * @Description: entry
  */
