@@ -1,13 +1,12 @@
 {
   "name": "highorder_react",
-  "version": "0.1.1",
-  "main": "src/decorator/",
-  "module": "src/decorator/",
+  "version": "0.1.2",
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
   "types": "src/decorator/index.d.ts",
   "private": false,
   "scripts": {
-    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
-    "build:es": "cross-env BABEL_ENV=es babel src --out-dir es"
+    "build": "webpack"
   },
   "keywords": [
     "react",
