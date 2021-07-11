@@ -1,8 +1,8 @@
 {
   "name": "highorder_react",
-  "version": "0.1.3",
-  "main": "./dist/main.js",
-  "module": "./dist/main.js",
+  "version": "0.1.4",
+  "main": "./src/decorator/",
+  "module": "./src/decorator/",
   "types": "src/decorator/index.d.ts",
   "private": false,
   "scripts": {
