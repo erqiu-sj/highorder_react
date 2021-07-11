@@ -1,6 +1,6 @@
 {
   "name": "highorder_react",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "./dist/main.js",
   "module": "./dist/main.js",
   "types": "src/decorator/index.d.ts",
