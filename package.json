@@ -1,6 +1,6 @@
 {
   "name": "highorder_react",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "main": "./dist/main.js",
   "module": "./dist/main.js",
   "types": "src/decorator/index.d.ts",
@@ -26,10 +26,15 @@
   "dependencies": {
     "@babel/cli": "^7.14.5",
     "@babel/preset-env": "^7.14.7",
+    "@types/react": "^17.0.14",
     "autobind-decorator": "^2.4.0",
+    "awesome-typescript-loader": "^5.2.1",
     "babel-loader": "^8.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "reflect-metadata": "^0.1.13",
     "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
     "webpack": "^5.44.0"
   },
   "browserslist": {
