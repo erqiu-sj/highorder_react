@@ -1,31 +1,37 @@
 {
   "name": "highorder_react",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "autobind-decorator": "^2.4.0",
-    "class-validator": "^0.13.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "reflect-metadata": "^0.1.13",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
-  },
+  "version": "0.1.1",
+  "main": "src/decorator/",
+  "module": "src/decorator/",
+  "types": "src/decorator/index.d.ts",
+  "private": false,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build:commonjs": "cross-env BABEL_ENV=commonjs babel src --out-dir lib",
+    "build:es": "cross-env BABEL_ENV=es babel src --out-dir es"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "keywords": [
+    "react",
+    "decoration",
+    "decorator",
+    "annotation",
+    "es7",
+    "high-order-component",
+    "JavaScript",
+    "Typescript"
+  ],
+  "devDependencies": {
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "autobind-decorator": "^2.4.0",
+    "babel-loader": "^8.2.2",
+    "reflect-metadata": "^0.1.13",
+    "ts-loader": "^9.2.3",
+    "webpack": "^5.44.0"
   },
   "browserslist": {
     "production": [
