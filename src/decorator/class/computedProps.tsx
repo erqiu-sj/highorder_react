@@ -1,14 +1,13 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2021-07-10 13:40:27
- * @LastEditTime : 2021-07-12 12:40:18
- * @FilePath     : /highorder_react/src/decorator/class/computedProps.tsx
+ * @LastEditTime: 2021-07-18 00:46:28
+ * @FilePath: /highorder_react/src/decorator/class/computedProps.tsx
  * @Description: computedProps
  */
-import React from 'react'
-import { validatorsClass } from '../../utils/index'
+import { validatorsClass } from "../../utils/index";
 interface computedPropsTypes<T> {
-  [key: string]: (props: T) => any
+  [key: string]: (props: T) => any;
 }
 /**
  * @description computedProps
@@ -17,13 +16,14 @@ interface computedPropsTypes<T> {
  */
 export function computedProps<P>(configs: computedPropsTypes<P>): Function {
   return (Target: Function) => {
-    validatorsClass(Target, 'computedProps')
+    validatorsClass(Target, "computedProps");
     return (props: P) => {
-      const nextProps = Object.assign({}, props)
+      const nextProps = Object.assign({}, props);
       Object.keys(configs).forEach((propsName: string) => {
-        Reflect.set(nextProps, propsName, configs[propsName](props))
-      })
-      return <Target {...nextProps} />
-    }
-  }
+        Reflect.set(nextProps, propsName, configs[propsName](props));
+      });
+      // @ts-ignore
+      return <Target {...nextProps} />;
+    };
+  };
 }

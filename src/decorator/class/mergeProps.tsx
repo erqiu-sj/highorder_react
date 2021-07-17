@@ -1,11 +1,10 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2021-07-10 12:11:56
- * @LastEditTime: 2021-07-11 16:35:58
- * @FilePath: /reactts/src/decorator/class/mergeProps.tsx
+ * @LastEditTime: 2021-07-18 00:46:21
+ * @FilePath: /highorder_react/src/decorator/class/mergeProps.tsx
  * @Description: mergeProps
  */
-import React from "react";
 import { validatorsClass } from "../../utils/index";
 
 /**
@@ -17,6 +16,7 @@ type mergePropsCb<T> = (props: T) => T;
 export function mergeProps<T extends Object>(cb: mergePropsCb<T>): Function {
   return (Target: Function) => {
     validatorsClass(Target, "mergeProps");
+    // @ts-ignore
     return (props: T) => <Target {...cb(props)} />;
   };
 }
