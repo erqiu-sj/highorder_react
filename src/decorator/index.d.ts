@@ -1,8 +1,8 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2021-07-10 19:59:10
- * @LastEditTime: 2021-07-10 20:05:38
- * @FilePath: /reactts/src/decorator/index.d.ts
+ * @LastEditTime: 2021-07-18 00:41:55
+ * @FilePath: /highorder_react/src/decorator/index.d.ts
  * @Description:
  */
 
@@ -45,4 +45,13 @@ export declare function componentDidMount<T>(
 
 export declare function componentDidUpdate(
   cb: Function
+): (target: Function) => void;
+
+export declare function hoc<T>(
+  containerComponent: Function,
+  ...params: T[]
+): (target: Function) => any;
+
+export declare function componentDidMountLikeEffect<S, P>(
+  fn: ((state: S, props: P) => void)[]
 ): (target: Function) => void;

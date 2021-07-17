@@ -1,8 +1,8 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2021-07-10 12:51:56
- * @LastEditTime: 2021-07-11 16:52:20
- * @FilePath: /reactts/src/decorator/index.ts
+ * @LastEditTime: 2021-07-18 00:40:24
+ * @FilePath: /highorder_react/src/decorator/index.ts
  * @Description: entry
  */
 import { initialState } from "./class/initialState";
@@ -15,14 +15,21 @@ import injectState from "./method/injectState";
 import injectProps from "./method/injectProps";
 import { lock } from "./method/lock";
 import { property } from "./other/index";
-import { componentDidMount, componentDidUpdate } from "./lifeCycle";
+import { hoc } from "./class/hoc";
+import {
+  componentDidMount,
+  componentDidUpdate,
+  componentDidMountLikeEffect,
+} from "./lifeCycle";
 export {
+  componentDidMountLikeEffect,
   componentDidUpdate,
   componentDidMount,
   property,
   initialState,
   mergeProps,
   defaultProps,
+  hoc,
   computedProps,
   renderComponent,
   bindThis,

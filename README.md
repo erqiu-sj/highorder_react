@@ -1,7 +1,7 @@
 <!--
  * @Author: 邱狮杰
  * @Date: 2021-07-09 23:57:06
- * @LastEditTime: 2021-07-18 00:27:43
+ * @LastEditTime: 2021-07-18 00:29:22
  * @FilePath: /highorder_react/README.md
  * @Description: 描述
 -->
@@ -59,7 +59,4 @@ class App extends Component<ownProps, ownState> {
 }
 ```
 
-[class](#classDecorator)
-[lifeCycle](#lifeCycle)
-[method](#method)
 [docs](/docs.md)
