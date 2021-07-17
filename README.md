@@ -15,7 +15,7 @@ import {
   computedProps,
   injectState,
   defaultProps
-} from "highorder_react";
+} from "high-order-react";
 
 interface ownState {
   age: number;
