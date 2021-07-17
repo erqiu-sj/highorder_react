@@ -1,7 +1,7 @@
 <!--
  * @Author: 邱狮杰
  * @Date: 2021-07-09 23:57:06
- * @LastEditTime: 2021-07-18 00:12:03
+ * @LastEditTime: 2021-07-18 00:14:47
  * @FilePath: /highorder_react/README.md
  * @Description: 描述
 -->
@@ -59,5 +59,5 @@ class App extends Component<ownProps, ownState> {
 }
 ```
 
-[Gitee dosc]('./docs.md')
-[Github dosc]('./docs.md')
+[Gitee dosc]('#https://gitee.com/Jsman/highorder_react/blob/master/docs.md')
+[Github dosc]('#https://gitee.com/Jsman/highorder_react/blob/master/docs.md')
