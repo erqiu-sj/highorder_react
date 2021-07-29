@@ -1,11 +1,11 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2021-07-10 19:59:10
- * @LastEditTime: 2021-07-18 00:41:55
+ * @LastEditTime: 2021-07-29 22:37:27
  * @FilePath: /highorder_react/src/decorator/index.d.ts
  * @Description:
  */
-
+import { Action } from "../redux/action/types";
 export declare function initialState<T extends Object>(
   state: T
 ): (targe: Function) => void;
@@ -55,3 +55,27 @@ export declare function hoc<T>(
 export declare function componentDidMountLikeEffect<S, P>(
   fn: ((state: S, props: P) => void)[]
 ): (target: Function) => void;
+export declare function defaultAction<T extends object>(
+  action: Action["type"],
+  params?: T | undefined
+): (Action & T) | Action;
+
+export declare function createAction<T extends object>(
+  action: Action["type"],
+  fn: (
+    actionFn: (
+      action: Action["type"],
+      params?: T | undefined
+    ) => (Action & T) | Action
+  ) => (action: Action["type"]) => (Action & T) | Action
+): Action | (Action & T);
+export declare class CreateReducer<S, A> {
+  constructor(state: S);
+
+  addAction(
+    action: Action["type"],
+    handler: (state: S, action: Action & A) => S
+  ): this;
+
+  finish(): (State: S | undefined, action: Action & A) => S;
+}
