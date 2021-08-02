@@ -1,7 +1,7 @@
 /*
  * @Author: 邱狮杰
  * @Date: 2021-07-10 12:51:56
- * @LastEditTime: 2021-07-29 22:33:39
+ * @LastEditTime: 2021-08-02 18:57:02
  * @FilePath: /highorder_react/src/decorator/index.ts
  * @Description: entry
  */
@@ -21,12 +21,7 @@ import {
   componentDidUpdate,
   componentDidMountLikeEffect,
 } from "./lifeCycle";
-import { defaultAction, createAction } from "../redux/action/action";
-import { CreateReducer } from "../redux/reducer/createReducer";
 export {
-  defaultAction,
-  createAction,
-  CreateReducer,
   componentDidMountLikeEffect,
   componentDidUpdate,
   componentDidMount,
